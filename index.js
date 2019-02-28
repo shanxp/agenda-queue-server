@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 
-const Agenda = require('agenda');
 const os = require('os');
+const Agenda = require('agenda');
 require('./bootstrap');
 const app = require('./app');
 

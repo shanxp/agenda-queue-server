@@ -1,16 +1,21 @@
+/* eslint-disable no-underscore-dangle */
+
+const { queueObj, queuePromise } = require(`${config.path.app}/services`);
 
 const queueController = {
+
   hc: (req, res) => res.sendStatus(200),
-  log: (req, res, next) => {
-    try {
+
+  log: async (req, res, next) => {
+    queuePromise().then(() => {
       const data = req.body;
       if (data) {
-        services.queue.now('log', data);
+        queueObj.now('log', data);
       }
       res.json('OK');
-    } catch (err) {
-      next(err);
-    }
+    }).catch((e) => {
+      next(e);
+    });
   },
 };
 

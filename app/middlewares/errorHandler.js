@@ -4,7 +4,7 @@ const err = {
       // display error
       const statusCode = error.status || 500;
       res.status(statusCode);
-      res.json({ message: 'error occured' });
+      res.json({ message: `Error occured - ${error.message}` });
       res.end();
     }
     next();

@@ -10,7 +10,7 @@ const queueController = {
     queuePromise().then(() => {
       const data = req.body;
       if (data) {
-        queueObj.now('log', data);
+        queueObj.now(config.db_task_name, data);
       }
       res.json('OK');
     }).catch((e) => {

@@ -1,3 +1,4 @@
+/* eslint-disable wrap-iife */
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable no-console */
 
@@ -18,4 +19,4 @@ const port = config.port || 5000;
     console.error('Error when starting the app', e);
     process.exit(1);
   }
-}());
+})();

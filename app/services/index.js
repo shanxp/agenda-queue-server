@@ -1,4 +1,4 @@
-const { queueObj, queuePromise } = require('./agenda');
+const { queueObj, queuePromise } = require('./AgendaService');
 
 module.exports = {
   queueObj,

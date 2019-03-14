@@ -9,4 +9,4 @@ The data will immediately be scheduled for processing.
 - Copy **app/env/default.json** to **app/env/\<environment\>.json**  e.g dev.json
 - Populate values in the json file
 - Run **npm install**
-- POST /log will accpet json data for logging
+- POST /log will accpet json data for e.g logging

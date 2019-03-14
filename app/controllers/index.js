@@ -1,6 +1,6 @@
 
-const queueController = require('./queue/queueController');
-const errorController = require('./error/errorController');
+const queueController = require('./QueueController');
+const errorController = require('./ErrorController');
 
 module.exports = {
   queueController,

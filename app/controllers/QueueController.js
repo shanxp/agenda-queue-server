@@ -6,11 +6,12 @@ const queueController = {
 
   hc: (req, res) => res.sendStatus(200),
 
-  log: async (req, res, next) => {
+  index: async (req, res, next) => {
     queuePromise().then(() => {
       const data = req.body;
-      if (data) {
-        queueObj.now(config.db_task_name, data);
+      const { type } = req.query;
+      if (data && type) {
+        queueObj.now(type, data);
       }
       res.json('OK');
     }).catch((e) => {

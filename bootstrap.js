@@ -22,7 +22,7 @@ try {
   Object.keys(currEnv).forEach((key) => {
     config[key] = currEnv[key];
   });
-  config.connection = `${config.db_driver}://${config.db_main_user}:${config.db_main_password}@${config.db_main_host}/${config.db_main_name}?authSource=${config.db_auth_source}`;
+  config.connection = `${config.db_driver}://${config.db_main_user}:${config.db_main_password}@${config.db_main_host}:${config.db_main_port}/${config.db_main_name}?authSource=${config.db_auth_source}`;
 } catch (e) {
   console.error(__filename, e);
   process.exit(1);

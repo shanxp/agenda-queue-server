@@ -15,9 +15,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "agenda": "^2.0.2",
     "body-parser": "^1.18.3",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "mongodb": "^3.3.3"
   },
   "devDependencies": {
     "eslint": "^5.14.1",

@@ -7,5 +7,6 @@
   "db_main_collection": "",  
   "db_main_user": "",
   "db_main_password": "",
-  "db_auth_source": "e.g admin"
+  "db_auth_source": "e.g admin",
+  "db_connection_timeout_ms": 10000
 }
